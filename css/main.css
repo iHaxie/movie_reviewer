@@ -204,6 +204,16 @@ textarea {
    .float-right {
        float: right;
    }
+   .button.hollow {
+       background-color: #F39C12;
+       color:  white;
+       border-color: transparent;
+   }
+
+   .button.hollow:hover {
+       background-color: rgb(204, 95, 7);
+       transition: all .5s ease;
+   }
 
    ul {
        list-style: none;
@@ -416,7 +426,9 @@ textarea {
             width: 70%;
         }
     }
-
+    div.ocultar {
+        display: none;
+    }
     @media only screen and (min-width:992px){
         div.sobre-autores {
             width: 50%;
@@ -454,21 +466,20 @@ textarea {
     }
 
     nav.menu-sobre a i,
-    div.detalle-autores i {
+    div.detalle-autores i, div.detalle-comentario i, div.detalle-calificaciones i {
         color:#F39C12;
         font-size: 1.4em;
         margin-right: 10px;
     }
 
     /** detalle del contenido **/
-
-    div.detalle-autores {
+    div.detalle-autores, div.detalle-comentario, div.detalle-calificaciones {
         margin-top:20px;
         border-bottom: 1px solid black;
         padding: 0px 20px;
     }
 
-    div.detalle-autores:nth-child(2){
+    div.detalle-autores:nth-child(2), div.detalle-comentario:nth-child(2), div.detalle-calificaciones:nth-child(2) {
         border: none;
     }
 
@@ -476,7 +487,18 @@ textarea {
         margin-bottom:20px;
         font-size: 15px;
     }
+    /** Detelle comentarios **/
+    div.detalle-comentario p {
+        font-style: italic  ;
+        font-weight: bold;
+        text-align: justify;
+    }
 
+    div.detalle-calificaciones p {
+        font-style: italic  ;
+        font-weight: bold;
+        text-align: justify;
+    }
     /** Peliculas **/
 
     ul.most-movies li, ul.less-movies li{
@@ -578,6 +600,64 @@ textarea {
         margin: 0;
         text-align: center;
     }
+
+    /** INTERENAS **/
+
+    /*REGISTRO*/
+
+    form.registro h3 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 0 0;
+    }
+
+    form.registro label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    
+    }
+
+    div.caja {
+        background-color: white;
+        border: 1px solid #e1e1e1;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    div.campo {
+        padding: 20px;
+        text-align: center;
+    }
+
+    @media only screen and (min-width: 768px){
+        div.campo {
+            padding: 20px;
+            text-align: center;
+        }
+    
+    }
+    #error{
+        clear: both;
+        padding: 20px;
+        text-align: center;
+    }
+
+    input:valid {
+        background-color: #BBFFF0;
+      }
+
+    .check-ok {
+        color: lime;
+      }
+       
+      input:invalid ~ .check-ok {
+        display: none;
+      }
+       
+      input:valid ~ .check-ok {
+        display: inline;
+      }
+
  /* ==========================================================================
    Helper classes
    ========================================================================== */
