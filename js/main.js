@@ -21,7 +21,33 @@
         });// DOM CONTENT  LOADED
 })();
 
+$(function(){
 
+        // Lettering
+
+        $('.nombre-sitio').lettering();
+
+        // Menu fijo
+
+        var windowHeight = $(window).height();
+        var barraAltura = $('.barra').innerHeight();
+
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > windowHeight) {
+                console.log("Ya te pasaste de la pantalla mano!!");
+            } else {
+                console.log("Firmala gio! Firmala!");
+            }
+        });
+
+});
+
+
+
+
+
+//*Sobre autores *//
 $(function() {
     $('.sobre-autores .info-autores:first').show();
     $('.menu-sobre a').on('click', function() {
