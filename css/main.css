@@ -309,228 +309,249 @@ h1.nombre-sitio span {
   }
 }
 
+html {
+  box-sizing: border-box;
+}
 
-   html {
-       box-sizing: border-box;
-   }
-   *,*::before,*::after {
-       box-sizing: inherit;
-   }
-   body {
-       background-color:  #f2f2f2;
-       font-family: 'Open Sans', sans-serif;
-   }
-   /** Globales **/
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-   /* Tooltip container */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/** Globales **/
+
+/* Tooltip container */
+
 .tooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#corona-gold {
+  color: #efb810;
+  width: 100%;
+  text-align: center;
+}
+
+#corona-silver {
+  color: #8a9597;
+  width: 100%;
+  text-align: center;
+  font-size: 100%;
+}
+
+#corona-bronze {
+  color: #cd7f32;
+  width: 100%;
+  text-align: center;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width:480px) {
+  .contenedor {
+    width: 95%;
   }
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 200px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-   
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+}
+
+@media only screen and (min-width:768px) {
+  .contenedor {
+    width: 90%;
   }
-  
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
+}
+
+@media only screen and (min-width:992px) {
+  .contenedor {
+    width: 90%;
+    max-width: 1100px;
   }
-
-   #corona-gold{
-       color: #efb810;
-       width: 100%;
-       text-align: center;
-   }
-
-   #corona-silver{
-       color: #8a9597;
-       width: 100%;
-       text-align: center;
-       font-size: 100%;
-   }
-
-   #corona-bronze{
-       color: #cd7f32;
-       width: 100%;
-      text-align: center;
-   }
-
-
-   .contenedor {
-       width:  95%;
-       margin: 0 auto;
-   }
-@media only screen and (min-width:480px){
-    .contenedor{
-        width: 95%;
-    }
 }
-@media only screen and (min-width:768px){
-    .contenedor{
-        width: 90%;
-    }
+
+.seccion {
+  padding: 30px 0;
 }
-@media only screen and (min-width:992px){
-    .contenedor{
-        width: 90%;
-        max-width: 1100px;
-    }
+
+.seccion p {
+  font-size: 1.2em;
+  text-align: center;
 }
-    .seccion {
-        padding: 30px 0;
-    }
 
-    .seccion p {
-        font-size: 1.2em;
-        text-align: center;
-    }
-
-   h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2.4em;
-    text-transform: uppercase;
-    text-align: center;
-   }
-
-   h2::after {
-       content: '';
-       margin: 0 auto;
-       background-image: url(../img/separador.png);
-       height: 30px;
-       width: 100px;
-       display: block;
-   }
-   h3 {
-       font-size: 1.8em;
-       color:Black;
-       font-family: 'PT sans', sans-serif;
-       margin: 0;
-   }
-
-   .button {
-       background-color: #F39C12;
-       padding: 10px 40px;
-       color: #ffffff;
-       text-transform: uppercase;
-       font-weight: bold;
-       font-family: 'Oswald', sans-serif;
-       text-decoration: none;
-       font-size:1em;
-       margin-top: 20px;
-       display: inline-block;
-       transition: all .3s ease;
-   }
-   .button:hover{
-       background-color: #e33000;
-   }
-   .float-right {
-       float: right;
-   }
-   .button.hollow {
-       background-color: #F39C12;
-       color:  white;
-       border-color: transparent;
-   }
-
-   .button.hollow:hover {
-       background-color: rgb(204, 95, 7);
-       transition: all .5s ease;
-   }
-
-   ul {
-       list-style: none;
-       margin: 0;
-       padding: 0;
-   }
-   /** Header **/
-
-   div.hero {
-       background-image: url(../img/backgroud3.jpg);
-       height: 70vh;
-       background-position: top center;
-       background-size: cover;
-   }
-
-   div.contenido-header {
-       padding-top: 40px;
-   }
-   
-   nav.redes-sociales {
-       text-align:  center;
-   }
-   nav.redes-sociales a {
-       color: #ffffff;
-       font-size: 2em;
-       margin: 20px;
-   }
-   nav.redes-sociales a {
-    margin-right: 1;
-    width: 10%;
-    height: 10%;
-    color: #F39C12;
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  text-align: center;
 }
-    div.informacion-evento {
-        text-align: center;
-        color: #ffffff;
-    }
-@media only screen and (min-widht: 768px){
-    div.informacion-evento {
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 50px;
-    }
+
+h2::after {
+  content: '';
+  margin: 0 auto;
+  background-image: url(../img/separador.png);
+  height: 30px;
+  width: 100px;
+  display: block;
 }
-    div.informacion-evento p {
-        margin: 0;
-        display: inline;
-        font-size: 20px;
-        text-transform: uppercase;
-    }
-    p.fecha {
-        float: left;
-    }
-    p.ciudad {
-        float: right;
-        text-align:  right;
-    }
-    
-    p.slogan {
-        text-transform: none!important;
-    }
-    p.slogan span {
-        font-weight: bold;
-        color: #F39C12;
-    }
 
-    h1.nombre-sitio {
-        font-size: 5.9vw;
-        text-transform: uppercase;
-        font-family: 'PT Sans', sans-serif;
-    }
+h3 {
+  font-size: 1.8em;
+  color: Black;
+  font-family: 'PT sans', sans-serif;
+  margin: 0;
+}
 
-    h1.nombre-sitio span {
-        color: #F39C12;
-    }
+.button {
+  background-color: #F39C12;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all .3s ease;
+}
 
-    @media only screen and (min-widht: 768px) {
-        h1.nombre-sitio{
-            font-size: 11.5vw;
-            margin: 0;
-            line-height: 1; 
-        }
-    }
+.button:hover {
+  background-color: #e33000;
+}
+
+.float-right {
+  float: right;
+}
+
+.button.hollow {
+  background-color: #F39C12;
+  color: white;
+  border-color: transparent;
+}
+
+.button.hollow:hover {
+  background-color: rgb(204, 95, 7);
+  transition: all .5s ease;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/** Header **/
+
+div.hero {
+  background-image: url(../img/backgroud3.jpg);
+  height: 70vh;
+  background-position: top center;
+  background-size: cover;
+}
+
+div.contenido-header {
+  padding-top: 40px;
+}
+
+nav.redes-sociales {
+  text-align: center;
+}
+
+nav.redes-sociales a {
+  color: #ffffff;
+  font-size: 2em;
+  margin: 20px;
+}
+
+nav.redes-sociales a {
+  margin-right: 1;
+  width: 10%;
+  height: 10%;
+  color: #F39C12;
+}
+
+div.informacion-evento {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (min-widht: 768px) {
+  div.informacion-evento {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+div.informacion-evento p {
+  margin: 0;
+  display: inline;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p.fecha {
+  float: left;
+}
+
+p.ciudad {
+  float: right;
+  text-align: right;
+}
+
+p.slogan {
+  text-transform: none!important;
+}
+
+p.slogan span {
+  font-weight: bold;
+  color: #F39C12;
+}
+
+h1.nombre-sitio {
+  font-size: 5.9vw;
+  text-transform: uppercase;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1.nombre-sitio span {
+  color: #F39C12;
+}
+
+@media only screen and (min-widht: 768px) {
+  h1.nombre-sitio {
+    font-size: 11.5vw;
+    margin: 0;
+    line-height: 1;
+  }
+}
+
 /** Barra **/
 
 div.barra {
@@ -740,24 +761,6 @@ div.detalle-calificaciones p {
 
 /** Peliculas **/
 
-.container {
-  width: 95%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.item {
-  width: calc((100% - 80px) / 4);
-  flex: none;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.6em 0;
-}
-
 ul.most-movies li, ul.less-movies li {
   padding: 10px;
   float: left;
@@ -774,6 +777,57 @@ ul.most-movies li, ul.less-movies li {
     width: 33.3%;
   }
 }
+
+/*Catalogo peliculas */
+
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: calc((100% - 10px) / 4);
+  flex: none;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em 0;
+}
+
+.item img {
+  width: 260px;
+  height: 450px;
+}
+
+.efecto-grupal {
+  position: inherit;
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.efecto-grupal:hover {
+  bottom: -80px;
+  opacity: 30;
+}
+
+.efecto-img {
+  max-width: 100%;
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  -webkit-transition: all .5s ease-out;
+}
+
+.efecto-img:hover {
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.1);
+}
+
+/*------------------------------------*/
 
 div.most-top, div.less-top {
   position: relative;
