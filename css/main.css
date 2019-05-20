@@ -553,10 +553,19 @@ div.logo img {
   }
 }
 
+.fixed {
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2f;
+}
+
 /** Nav Principal **/
 
 nav.navegacion-principal {
   display: none;
+  width: 100%;
 }
 
 nav.navegacion-principal a {

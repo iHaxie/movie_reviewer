@@ -26,7 +26,6 @@ $(function(){
         // Lettering
 
         $('.nombre-sitio').lettering();
-
         // Menu fijo
 
         var windowHeight = $(window).height();
@@ -35,15 +34,21 @@ $(function(){
         $(window).scroll(function(){
             var scroll = $(window).scrollTop();
             if (scroll > windowHeight) {
-                console.log("Ya te pasaste de la pantalla mano!!");
+                $('.barra').addClass('fixed');
+                $('body').css({'margin-top': barraAltura+'px;'});
             } else {
-                console.log("Firmala gio! Firmala!");
+                $('.barra').removeClass('fixed');
+                $('body').css({'margin-top': '0px;'});
             }
         });
 
 });
 
+// Menu responsivo 
 
+$('.menu-movil').on('click', function(){
+    $('.navegacion-principal').slideToggle();
+})
 
 
 
