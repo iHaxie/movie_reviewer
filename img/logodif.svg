@@ -1,0 +1,15 @@
+<svg width="600" height="97" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+ <metadata>Created by potrace 1.15, written by Peter Selinger 2001-2017</metadata>
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill="#000000" transform="translate(0, 97) scale(0.1, -0.1)">
+   <path fill="#ff7b00" id="svg_2" d="m55,485.25l0,-334.750015l110,0l110,0l0,334.750015l0,334.75l-110,0l-110,0l0,-334.75z"/>
+  </g>
+  <text transform="matrix(2.72238, 0, 0, 3.8063, -67.3838, -201.878)" font-style="normal" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Arvo, sans-serif" font-size="24" id="svg_3" y="74.769674" x="35.685426" stroke-width="0" stroke="#000" fill="#ffffff">MOVIEREVIEWER</text>
+ </g>
+</svg>
