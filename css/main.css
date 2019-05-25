@@ -295,10 +295,11 @@ h1.nombre-sitio {
   font-size: 5.9vw;
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
+  color: #ffffff
 }
 
 h1.nombre-sitio span {
-  color: #F39C12;
+  color:white;
 }
 
 @media only screen and (min-widht: 768px) {
